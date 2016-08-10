@@ -1,0 +1,62 @@
+	img{
+		border-radius: 15px; 
+		width: 277px;
+		height: 277px;
+	}
+	h1, h2, p{
+		text-align: center; 
+	}
+	h1{
+		font-family: 'Pacifico', cursive;
+		font-size: 60px;
+	}
+	h2{
+		font-family: 'Asap', sans-serif;
+	}
+	p, h2.names{
+		font-family: 'Raleway', sans-serif;
+	}
+	h2.titles{
+		color: #94CD67; 
+		font-size: 40px;
+	}
+	*{
+		margin: auto;
+	}
+	table.outer{
+		border-collapse: separate;
+		border-spacing: 50px; 
+	}
+	td{
+		font-family: 'Raleway', sans-serif;
+	}
+	html{
+		background-color: rgb(122, 193, 66);
+	}
+	.goals{
+		height: auto;
+		width: 55%; 
+		background-color: white;
+		border-radius: 10px;
+		padding: 2%;
+	}
+	#members{
+		width: 55%;
+		background-color: white;
+		border-radius: 10px;
+		padding: 2%;
+	}
+	#work{
+		width: 55%;
+		background-color: white;
+		border-radius: 10px;
+		padding: 2%;
+	}
+	ul{
+		font-family: 'Raleway', sans-serif;
+		display: table;
+		margin: 0 auto;
+	}
+	.slack{
+		text-align: right;
+	}
