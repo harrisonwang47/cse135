@@ -26,6 +26,7 @@
 	table.outer{
 		border-collapse: separate;
 		border-spacing: 50px; 
+		text-align: center;
 	}
 	td{
 		font-family: 'Raleway', sans-serif;
