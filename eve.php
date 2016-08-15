@@ -15,6 +15,8 @@
 			var_dump($_ENV);
 			var_dump($_POST);
 			var_dump($_GET); 
+
+			print $_ENV['HOME'];
 		?>
 	</body>
 </html>
