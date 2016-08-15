@@ -8,7 +8,7 @@
 	<body>
 		<p>This program will print out all the environment variables from the request and related values. </p>
 		<?php 
-			$indicesServer = array('PHP_SELF', 
+			/*$indicesServer = array('PHP_SELF', 
 			'argv', 
 			'argc', 
 			'GATEWAY_INTERFACE', 
@@ -58,7 +58,8 @@
 			        echo '<tr><td>'.$arg.'</td><td>-</td></tr>' ; 
 			    } 
 			} 
-			echo '</table>' ; 
+			echo '</table>' ; */
+			phpinfo(32);
 		?>
 	</body>
 </html>
