@@ -7,9 +7,11 @@
 
 	<body>
 		<?php 
-		  $dt = new DateTime("now", new DateTimeZone('America/California'));
+		  $D = exec('date /T');
+  		  $T = exec('time /T');
+  		  $DT = strtotime(str_replace("/","-",$D." ".$T));
 		  print "Hello Web World from Language PHP on "; 
-		  echo $dt->format('m/d/Y, H:i:s');
+		  echo(date("Y-m-d H:i:s",$DT));
 		?>
 	</body>
 </html>
