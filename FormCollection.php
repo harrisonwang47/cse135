@@ -12,19 +12,19 @@
 			<label>First Name:
 			 <input type="text" name="firstName" id="firstName">
 			</label>
-			
+			<br>
 			<label>Last Name:
 			 <input type="text" name="lastName" id="lastName">
 			</label>
-			
+			<br>
 			<label for="formAction">Method:</label>
 			 <select id="formAction" onchange="this.form.method = this.options[selectedIndex].value;">
 				<option>GET</option>
 				<option>POST</option>
 			 </select>
 			
-			<label for="formAction">Color:</label>
-			 <select id="formAction" onchange="this.form.method = this.options[selectedIndex].value;">
+			<label>Color:</label>
+			 <select>
 				<option>RED</option>
 				<option>WHITE</option>
 				<option>BLUE</option>
