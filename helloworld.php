@@ -3,9 +3,12 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" />
 		<title>Hello World PHP Style</title>
+		<style> 
+			body {background-color: <?php echo $rand_background;?>;}
+		</style>
 	</head>
 
-	<body style="background: <?php echo $rand_background; ?>;">
+	<body >
 		<?php 
 		  	print "Hello Web World from Language PHP on "; 
 		  	date_default_timezone_set("America/Los Angeles");
@@ -36,6 +39,7 @@
 		 	#randomly generate background colors
 		 	$background_colors = array('#282E33', '#25373A', '#164852', '#495E67', '#FF3838');
 			$rand_background = $background_colors[array_rand($background_colors)];
+
 		?>
 	</body>
 </html>
