@@ -9,13 +9,9 @@
 		<h1>Form Collection</h1>
 		
 		<form action="echo.php" method="get">
-			<label>First Name:
-			 <input type="text" name="firstName" id="firstName">
-			</label>
+			First Name:	<input type="text" name="firstName" id="firstName">
 			<br>
-			<label>Last Name:
-			 <input type="text" name="lastName" id="lastName">
-			</label>
+			Last Name: <input type="text" name="lastName" id="lastName">
 			<br>
 			<label for="formAction">Method:</label>
 			 <select id="formAction" onchange="this.form.method = this.options[selectedIndex].value;">
