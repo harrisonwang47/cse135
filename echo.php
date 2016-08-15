@@ -35,7 +35,7 @@
 					document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>");
 				</script>';
 
-		 	echo ("color");
+		 	echo ("$color");
 		?> 
 		</p>
 	</body>
