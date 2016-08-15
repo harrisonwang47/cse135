@@ -37,7 +37,7 @@
 		?> 
 		</div>
 		<?php
-			$color = "color";
+			$color = "value";
 			echo ("<BODY BGCOLOR=\"$color\">");
 		?>
 	</body>
