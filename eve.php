@@ -13,6 +13,10 @@
 			#print_r($_GET); 
 			foreach ($_POST as $key => $value)
         		echo $key.'='.$value.'<br />';
+        	foreach ($_GET as $key => $value)
+        		echo $key.'='.$value.'<br />';
+        	foreach ($_ENV as $key => $value)
+        		echo $key.'='.$value.'<br />';
 		?>
 	</body>
 </html>
