@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>ECHO</title>
+		<title>Echo</title>
 	</head>
 	
 	<body>	
 		<h1>Form Collection</h1>
-		<p> Hello <?php echo $_["firstName"]; echo $_["lastName"];?> from a Web app written in PHP on 
+		<p> Hello <?php echo $_SERVER["firstName"]; echo $_SERVER["lastName"];?> from a Web app written in PHP on 
 		 <?php	
 		 	date_default_timezone_set("America/Los_Angeles");
 		  	echo date('m/d/Y, ');
