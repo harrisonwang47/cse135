@@ -7,6 +7,6 @@
 
 	<body>
 		<p>This program will print out all the environment variables from the request and related values. </p>
-		<?php var_dump( get_defined_vars() );?>
+		<?php var_dump(getenv('env'));?>
 	</body>
 </html>
