@@ -21,9 +21,9 @@
 			
 			<label>Color:</label>
 			 <select>
-				<option>red</option>
-				<option>white</option>
-				<option>blue</option>
+				<option value="red">red</option>
+				<option value="white">white</option>
+				<option value="blue">blue</option>
 			 </select>
 			
 			<input type="submit" value="Submit">
