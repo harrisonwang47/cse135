@@ -12,7 +12,7 @@
   		  $DT = strtotime(str_replace("/","-",$D." ".$T));*/
   		  date_default_timezone_set("America/California");
 		  print "Hello Web World from Language PHP on "; 
-		  echo(date('m-d-Y H:i:s A'));
+		  echo(date('m-d-Y h:i:s'));
 		?>
 	</body>
 </html>
