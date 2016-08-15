@@ -5,7 +5,7 @@
 		<title>Hello World PHP Style</title>
 	</head>
 
-	<body >
+	<body>
 		<?php 
 		  	print "Hello Web World from Language PHP on "; 
 		  	date_default_timezone_set("America/Los Angeles");
