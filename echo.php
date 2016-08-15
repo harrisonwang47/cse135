@@ -7,7 +7,8 @@
 	
 	<body>	
 		<h1>Form Collection</h1>
-		<p> Hello <?php echo $_POST["firstName"];?> <?php echo $_POST["lastName"];?> from a Web app written in PHP on 
+		<p> Hello <?php echo $_POST["firstName"];?> <?php echo $_POST["lastName"];?> 
+				  <?php echo $_GET["firstName"];?> <?php echo $_GET["lastName"];?> from a Web app written in PHP on 
 		 <?php	
 		 	date_default_timezone_set("America/Los_Angeles");
 		  	echo date('m/d/Y, ');
