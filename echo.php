@@ -40,5 +40,9 @@
 			$color = $_POST["color"];
 			echo ("<BODY BGCOLOR=\"$color\">");
 		?>
+		<?php
+			$color = $_GET["color"];
+			echo ("<BODY BGCOLOR=\"$color\">");
+		?>
 	</body>
 </html>
