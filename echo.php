@@ -36,6 +36,9 @@
 				</script>';
 		?> 
 		</div>
-		<?php echo $_GET["color"];?>
+		<?php 
+			$bgcolor = $_GET["color"];
+			echo ("<BODY BGCOLOR=\"$bgcolour\">");
+		?>
 	</body>
 </html>
