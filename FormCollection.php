@@ -14,7 +14,7 @@
 			</label>
 			
 			<label>Last Name:
-			 <input type="text" name="lasttName" id="lastName">
+			 <input type="text" name="lastName" id="lastName">
 			</label>
 			
 			<label for="formAction">Method:</label>
