@@ -8,7 +8,7 @@
 	<body>
 		<p>This program will print out all the environment variables from the request and related values. </p>
 		<?php 
-			phpinfo(16);
+			phpinfo(32);
 		?>
 	</body>
 </html>
