@@ -20,7 +20,7 @@
 			 </select>
 			
 			<label>Color:</label>
-			 <select>
+			 <select name="color">
 				<option value="red">red</option>
 				<option value="white">white</option>
 				<option value="blue">blue</option>

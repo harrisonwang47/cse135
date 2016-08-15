@@ -34,8 +34,8 @@
 					
 					document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>");
 				</script>';
-				
-		 	echo ("<BODY BGCOLOR=\"value\">");
+
+		 	echo ("<BODY BGCOLOR=\"color\">");
 		?> 
 		</p>
 	</body>
