@@ -3,6 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" />
 		<title>Hello World PHP Style</title>
+		<body style="background: <?php echo $rand_background; ?>;">
 	</head>
 
 	<body>
@@ -33,9 +34,9 @@
 					document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>");
 				</script>';
 		 	
+		 	#randomly generate background colors
 		 	$background_colors = array('#282E33', '#25373A', '#164852', '#495E67', '#FF3838');
 			$rand_background = $background_colors[array_rand($background_colors)];
-			echo $rand_background;
 		?>
 	</body>
 </html>
