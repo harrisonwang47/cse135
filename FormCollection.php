@@ -14,6 +14,10 @@
  <input type="text" name="firstName" id="firstName">
 </label>
 
+<label>Last Name:
+ <input type="text" name="lasttName" id="lastName">
+</label>
+
 <label for="formAction">Form Action:</label>
  <select id="formAction" onchange="this.form.method = this.options[selectedIndex].value;">
 	<option>GET</option>
