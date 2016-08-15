@@ -9,7 +9,7 @@
 		<?php 
   		  date_default_timezone_set("America/Los Angeles");
 		  print "Hello Web World from Language PHP on "; 
-		  echo(date('m-d-Y h:i:s A'));
+		  echo(date('m-d-Y H:i:s T'));
 		?>
 	</body>
 </html>
