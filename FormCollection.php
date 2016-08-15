@@ -8,7 +8,7 @@
 	
 <h1>Form Collection</h1>
 
-<form action="echo" method="get">
+<form action="echo.php" method="get">
 
 <label>First Name:
  <input type="text" name="firstName" id="firstName">
