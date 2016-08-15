@@ -34,12 +34,12 @@
 				</script>';
 		 	
 		 	#randomly generate background colors
-		 	$c1 = "#ffffff";
-		 	$c2 = "#ffff99"; 
-		 	$c3 = "#00ccff"; 
+		 	$c1 = "#ff0000";
+		 	$c2 = "#0000ff"; 
+		 	$c3 = "#00ff00"; 
 		 	$number = rand(1,3); 
 		 	$bgcolour = ${"c$number"}; 
-		 	echo ("<BODY BGCOLOR=\"$bgcolour\">"); ?>
+		 	echo ("<BODY BGCOLOR=\"$bgcolour\">");
 		?>
 	</body>
 </html>
