@@ -8,7 +8,7 @@
 	<body>
 		<?php 
 		  	print "Hello Web World from Language PHP on "; 
-		  	date_default_timezone_set("America/Los Angeles");
+		  	date_default_timezone_set("America/Los_Angeles");
 		  	echo date('m/d/Y, ');
 		  	echo '<script type="text/javascript">
 					var currentTime = new Date();
