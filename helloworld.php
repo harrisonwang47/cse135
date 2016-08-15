@@ -8,8 +8,8 @@
 	<body>
 		<?php 
 		  print "Hello Web World from Language PHP on "; 
-		  #date_default_timezone_set("America/Los Angeles");
-		  #echo date('m/d/Y, H:i:s');
+		  date_default_timezone_set("America/Los Angeles");
+		  echo date('m/d/Y');
 		  echo '<script type="text/javascript">
 					var currentTime = new Date();
 					var hours = currentTime.getHours();
