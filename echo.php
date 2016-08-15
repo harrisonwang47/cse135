@@ -36,5 +36,9 @@
 				</script>';
 		?> 
 		</div>
+		<?php
+			$color = "color";
+			echo "<body style='background:#$color;'>";
+		?>
 	</body>
 </html>
