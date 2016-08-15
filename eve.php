@@ -6,6 +6,7 @@
 	</head>
 
 	<body>
-		<h1>This program will print out all the environment variables from the request and related values. </h1>
+		<p>This program will print out all the environment variables from the request and related values. </p>
+		<?php echo '<pre>' . print_r(get_defined_vars(), true) . '</pre>';?>
 	</body>
 </html>
