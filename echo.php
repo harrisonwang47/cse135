@@ -37,10 +37,8 @@
 		?> 
 		</div>
 		<?php
-			$color = $_POST["color"];
-			$value = $_GET["color"];
+			$color = $_REQUEST["color"];
 			echo ("<BODY BGCOLOR=\"$color\">");
-			echo ("<BODY BGCOLOR=\"$value\">");
 		?>
 	</body>
 </html>
