@@ -34,6 +34,6 @@
 					document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>");
 				</script>';
 		?> 
-		</p
+		</p>
 	</body>
 </html>
