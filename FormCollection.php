@@ -18,12 +18,18 @@
  <input type="text" name="lasttName" id="lastName">
 </label>
 
-<label for="formAction">Form Action:</label>
+<label for="formAction">Method:</label>
  <select id="formAction" onchange="this.form.method = this.options[selectedIndex].value;">
 	<option>GET</option>
 	<option>POST</option>
  </select>
 
+<label for="formAction">Color:</label>
+ <select id="formAction" onchange="this.form.method = this.options[selectedIndex].value;">
+	<option>RED</option>
+	<option>WHITE</option>
+	<option>BLUE</option>
+ </select>
 
 <input type="submit" value="Submit">
 
