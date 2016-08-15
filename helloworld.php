@@ -7,11 +7,12 @@
 
 	<body>
 		<?php 
-		  $D = exec('date /T');
+		  /*$D = exec('date /T');
   		  $T = exec('time /T');
-  		  $DT = strtotime(str_replace("/","-",$D." ".$T));
+  		  $DT = strtotime(str_replace("/","-",$D." ".$T));*/
+  		  date_default_timezone_set("America/California");
 		  print "Hello Web World from Language PHP on "; 
-		  echo(date("Y-m-d H:i:s",$DT));
+		  echo(date('m-d-Y H:i:s A'));
 		?>
 	</body>
 </html>
