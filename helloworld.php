@@ -3,10 +3,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" />
 		<title>Hello World PHP Style</title>
-		<body style="background: <?php echo $rand_background; ?>;">
 	</head>
 
-	<body>
+	<body style="background: <?php echo $rand_background; ?>;">
 		<?php 
 		  	print "Hello Web World from Language PHP on "; 
 		  	date_default_timezone_set("America/Los Angeles");
