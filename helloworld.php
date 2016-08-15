@@ -3,9 +3,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" />
 		<title>Hello World PHP Style</title>
-		<style>
-			#topbar { border-bottom:4px solid #<?php echo $r.$g.$b; ?>; }
-		</style>
 	</head>
 
 	<body>
@@ -36,10 +33,8 @@
 					document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>");
 				</script>';
 		 	
-		 	$randomString = md5(time().rand(0,999)); 
-			$r = substr($randomString,0,2); //1. and 2.
-			$g = substr($randomString,2,2); //3. and 4.
-			$b = substr($randomString,4,2); //5. and 6.
+		 	$background_colors = array('#282E33', '#25373A', '#164852', '#495E67', '#FF3838');
+			$rand_background = $background_colors[array_rand($background_colors)];
 		?>
 	</body>
 </html>
