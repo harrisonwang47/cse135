@@ -7,7 +7,7 @@
 	
 	<body>	
 		<h1>Form Collection</h1>
-		<p> Hello <?php echo $_POST["firstName"];?> <?php echo $_POST["lastName"];?> 
+		<div>Hello <?php echo $_POST["firstName"];?> <?php echo $_POST["lastName"];?> 
 				  <?php echo $_GET["firstName"];?> <?php echo $_GET["lastName"];?> from a Web app written in PHP on 
 		 <?php	
 		 	date_default_timezone_set("America/Los_Angeles");
@@ -34,9 +34,8 @@
 					
 					document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>");
 				</script>';
-
-		 	echo ("$color");
 		?> 
-		</p>
+		</div>
+		<?php echo $_GET["color"];?>
 	</body>
 </html>
