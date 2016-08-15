@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html" />
 		<title>Echo</title>
 	</head>
 	
@@ -35,7 +35,7 @@
 					document.write("<b>" + hours + ":" + minutes + " " + suffix + "</b>");
 				</script>';
 
-		 	echo ("<BODY BGCOLOR=\"color\">");
+		 	echo ("color");
 		?> 
 		</p>
 	</body>
