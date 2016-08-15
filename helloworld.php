@@ -7,9 +7,9 @@
 
 	<body>
 		<?php 
-		  #$localtime = new DateTime("now", new DateTimeZone('America/New York'));
-		  print "Hello Web World from Language PHP on" print_r(localtime());
-		  #echo $localtime ->format('m/d/Y, H:i:s');
+		  $dt = new DateTime();
+		  echo $dt->format('m/d/Y, H:i:s');
+		  print "Hello Web World from Language PHP on"; 
 		?>
 	</body>
 </html>
