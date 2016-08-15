@@ -3,9 +3,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" />
 		<title>Hello World PHP Style</title>
-		<style> 
-			body {background-color: <?php echo $rand_background;?>;}
-		</style>
 	</head>
 
 	<body >
@@ -37,9 +34,7 @@
 				</script>';
 		 	
 		 	#randomly generate background colors
-		 	$background_colors = array('#282E33', '#25373A', '#164852', '#495E67', '#FF3838');
-			$rand_background = $background_colors[array_rand($background_colors)];
-
+		 	<?php $c1 = "#ffffff"; $c2 = "#ffff99"; $c3 = "#00ccff"; $c4 = "#66ff99"; $c5 = "#ffcc00"; $c6 = "#d7ebff"; $c7 = "#ccffcc"; $number = rand(1,7); $bgcolour = ${"c$number"}; echo ("<BODY BGCOLOR=\"$bgcolour\">"); ?>
 		?>
 	</body>
 </html>
