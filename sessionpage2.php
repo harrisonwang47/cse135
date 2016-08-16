@@ -9,10 +9,11 @@
 			session_start();
 			
 			#check to see if the session variable is set
-			if($_SESSION['username'])
+			if(isset($_SESSION['username']))
 			{
 				echo "Hi" . $_SESSION['username'] . "nice to meet you!";
 			}
+			#reroute back to session page 1
 			else
 			{
 				echo "Howdy stranger...tell me your name on page1!<br>";
@@ -20,7 +21,7 @@
 				echo "<a href = \"sessionpage1.php\"> Go back to SessionPage1</a>";
 			}
 			
-			#delete the session variable
+			#delete the session variable when delete button is clicked
 			if($_SERVER['REQUEST_METHOD']=='POST')
 			{
 				unset($_SESSION[‘username’]);
