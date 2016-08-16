@@ -14,8 +14,6 @@
 			   $username = $_POST['username'];
 			   $_SESSION['username']= $username;
 			}  
-
-			exit();
 		?>
 		
 		<form action="sessionpage2.php" method="post">
