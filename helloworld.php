@@ -10,6 +10,7 @@
 		  	print "Hello Web World from Language PHP on "; 
 		  	date_default_timezone_set("America/Los_Angeles");
 		  	echo date('m/d/Y, ');
+		  	#gets the local time
 		  	echo '<script type="text/javascript">
 					var currentTime = new Date();
 					var hours = currentTime.getHours();
