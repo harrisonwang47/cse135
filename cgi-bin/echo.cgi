@@ -1,7 +1,13 @@
 #!/usr/bin/perl
 
-local ($buffer, @pairs, $pair, $name, $value, %FORM);
-# Read in text
+my $buffer;
+my @pairs;
+my $pair; 
+my $name;
+my $value; 
+my %FORM;
+
+# Read text
 $ENV{'REQUEST_METHOD'} =~ tr/a-z/A-Z/;
 if ($ENV{'REQUEST_METHOD'} eq "POST")
 {
@@ -9,7 +15,8 @@ if ($ENV{'REQUEST_METHOD'} eq "POST")
 }else {
    $buffer = $ENV{'QUERY_STRING'};
 }
-# Split information into name/value pairs
+
+# parse into name and value pairs
 @pairs = split(/&/, $buffer);
 foreach $pair (@pairs)
 {
@@ -18,6 +25,7 @@ foreach $pair (@pairs)
    $value =~ s/%(..)/pack("C", hex($1))/eg;
    $FORM{$name} = $value;
 }
+
 $first_name = $FORM{firstname};
 $last_name  = $FORM{lastname};
 $color = $FORM{color};
@@ -31,7 +39,6 @@ print "<html><head><title>Hello!</title>";
 print "</head>";
 print "<body bgcolor = $color>\n";
 print "<h2>Hello $first_name $last_name from a Web app written in Perl on $datetime </h2><br>";
-print "Your favorite color is $color and your request method is $request<br>";
 print "</body>\n</html>";
 
 1;

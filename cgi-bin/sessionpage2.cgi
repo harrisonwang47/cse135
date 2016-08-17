@@ -9,9 +9,11 @@ use CGI;
 use CGI::Carp qw(fatalsToBrowser); # show errors in browser
 use CGI::Session;
 
+#create new CGI
 my $cgi = new CGI;   
 my $query = CGI->new();
    
+#if session still exist from last page visit, then continue it   
 my $sid = $cgi->cookie('CGISESSID') || $cgi->param('CGISESSID') || undef;
 my $session = new CGI::Session(undef, $sid, {Directory=>'/tmp'});
 
