@@ -9,8 +9,6 @@
 		<?php
 			session_start();
 			
-			echo "this sessions's cookie is" . $_SESSION['username'] . "!";
-			
 			#check to see if the session variable is set
 			if(isset($_SESSION['username']))
 			{

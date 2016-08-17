@@ -14,6 +14,8 @@
 			{ 
 			   $username = $_POST['username'];
 			   $_SESSION['username']= $username;
+			   session_write_close();
+    		   header('location:sessionpage2.php');
 			}  
 		?>
 		
