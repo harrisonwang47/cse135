@@ -6,6 +6,7 @@
 	</head>
 	
 	<body>
+
 		<?php session_start();
 	 		#check to see if the session variable is set
 	 		if(isset($_SESSION['username']))
@@ -26,6 +27,9 @@
 	 			$_SESSION = array();
 	 			session_destroy();
 	 		}
+
+	 		echo "Hi" . $_SESSION['username'] . "nice to meet you!";
+
 		?>
 
 		<form action="sessionpage2.php" method="post">
