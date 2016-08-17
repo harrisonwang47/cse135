@@ -20,12 +20,12 @@
 				echo " "
 				echo "<a href = \"sessionpage1.php\"> Go back to SessionPage1</a>";
 			}
-			
+			*/
 			#delete the session variable when delete button is clicked
 			if($_SERVER['REQUEST_METHOD']=='POST')
 			{
 				unset($_SESSION[‘username’]);
-			*/
+			
 		?>
 		<form action="sessionpage2.php" method="post">
 			<button type="submit" name="delete">Clear Session</button>
