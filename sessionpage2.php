@@ -1,28 +1,3 @@
-<?php session_start();
-	  
-	  #check to see if the session variable is set
-	  if(isset($_SESSION['username']))
-	  {
-	  	echo "Hi" . $_SESSION['username'] . "nice to meet you!";
-	  }
-	  
-	  /*
-	  #reroute back to session page 1
-	  else
-	  {
-	  	echo "Howdy stranger...tell me your name on page1!<br>";
-	  	echo " "
-	  	echo "<a href = \"sessionpage1.php\"> Go back to SessionPage1</a>";
-	  }
-	  
-	  #delete the session variable when delete button is clicked
-	  if($_SERVER['REQUEST_METHOD']=='POST')
-	  {
-	  	unset($_SESSION[‘username’]);
-	  	
-	  */
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -31,6 +6,37 @@
 	</head>
 	
 	<body>
+		<?php session_start();
+	 		
+	 		#check to see if the session variable is set
+	 		/*if(isset($_SESSION['username']))
+	 		{
+	 			echo "Hi" . $_SESSION['username'] . "nice to meet you!";
+	 		}
+	 		
+	 		
+	 		#reroute back to session page 1
+	 		else
+	 		{
+	 			echo "Howdy stranger...tell me your name on page1!<br>";
+	 			echo " "
+	 			echo "<a href = \"sessionpage1.php\"> Go back to SessionPage1</a>";
+	 		}
+	 		
+	 		#delete the session variable when delete button is clicked
+	 		if($_SERVER['REQUEST_METHOD']=='POST')
+	 		{
+	 			unset($_SESSION[‘username’]);
+	 			$_SESSION = array();
+	 			session_destroy();
+	 			
+	 		*/
+
+print "There are ".$_SESSION['num_stooges'] ." and
+my favorite is ". $_SESSION['fav_stooge'];
+
+		?>
+
 		<form action="sessionpage2.php" method="post">
 			<button type="submit" name="delete">Clear Session</button>
 		</form>
