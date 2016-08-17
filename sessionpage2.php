@@ -9,13 +9,15 @@
 		<?php
 			session_start();
 			
-			echo $_SESSION['username'];
-			/*
+			//echo $_SESSION['username'];
+			
 			#check to see if the session variable is set
 			if(isset($_SESSION['username']))
 			{
 				echo "Hi" . $_SESSION['username'] . "nice to meet you!";
 			}
+			
+			/*
 			#reroute back to session page 1
 			else
 			{
