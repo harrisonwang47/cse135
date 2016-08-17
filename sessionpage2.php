@@ -27,9 +27,6 @@
 	 			$_SESSION = array();
 	 			session_destroy();
 	 		}
-
-	 		echo "Hi" . $_SESSION['username'] . "nice to meet you!";
-
 		?>
 
 		<form action="sessionpage2.php" method="post">
