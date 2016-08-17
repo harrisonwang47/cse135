@@ -7,7 +7,7 @@
 	<body>
 		<?php
 			session_start();
-			
+			/*
 			#check to see if the session variable is set
 			if(isset($_SESSION['username']))
 			{
@@ -25,9 +25,9 @@
 			if($_SERVER['REQUEST_METHOD']=='POST')
 			{
 				unset($_SESSION[‘username’]);
-			}
+			*/
 		?>
-		<form>
+		<form action="sessionpage2.php" method="post">
 			<button type="submit" name="delete">Clear Session</button>
 		</form>
 	</body>

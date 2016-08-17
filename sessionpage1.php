@@ -17,7 +17,7 @@
 		?>
 		
 		<form action="sessionpage2.php" method="post">
-			Username: <input type="text" name="username"/>
+			Username: <input type="text" name="username" id="username"/>
 			<button type="submit" name="save">Save</button><br>
 			<a href="sessionpage2.php">Go to Session Page 2!</a>
 		</form>
