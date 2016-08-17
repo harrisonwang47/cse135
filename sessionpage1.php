@@ -1,15 +1,12 @@
 <?php session_start();
 	  #when the save button is clicked, go to sessionpage2
-	  /*if ($_SERVER['REQUEST_METHOD']=='POST') 
+	  if ($_SERVER['REQUEST_METHOD']=='POST') 
 	  { 
 	     $username = $_POST['username'];
 	     $_SESSION['username']= $username;
 	     session_write_close();
    	     header('location:sessionpage2.php');
-	  }  */
-
-$_SESSION['fav_stooge']='Moe';
-$_SESSION['num_stooges']=3;
+	  }  
 ?>
 
 <!DOCTYPE html>
