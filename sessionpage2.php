@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html" />
 		<title>SessionPage2</title>
 	</head>
 	
@@ -8,6 +9,8 @@
 		<?php
 			session_start();
 			
+			echo $_SESSION['username'];
+			/*
 			#check to see if the session variable is set
 			if(isset($_SESSION['username']))
 			{
@@ -20,7 +23,7 @@
 				echo " "
 				echo "<a href = \"sessionpage1.php\"> Go back to SessionPage1</a>";
 			}
-			/*
+			
 			#delete the session variable when delete button is clicked
 			if($_SERVER['REQUEST_METHOD']=='POST')
 			{

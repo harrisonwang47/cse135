@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html" />
 		<title>SessionPage1</title>
 	</head>
 	
