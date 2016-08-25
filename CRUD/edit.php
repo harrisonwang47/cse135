@@ -13,8 +13,8 @@
    
     $user_id = $_POST['user_id'];
      
-    define('DB_USER','cse135demo');
-    define('DB_PASSWORD','notsecret');
+    define('DB_USER','harrison');
+    define('DB_PASSWORD','Team135tk!');
     define('DB_HOST','127.0.0.1');
     define('DB_NAME','userDB');
 
