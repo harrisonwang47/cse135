@@ -28,7 +28,7 @@
 	   $box_office = $_REQUEST['box_office'];
 	   $movie_id = $_REQUEST['movie_id'];
 	
-	   $sql = "UPDATE movies SET movie_title='" .$movie_title."' ,studio='".$studio."' ,year='".$year."' ,box_office='".$box_office."' WHERE user_id='".$movie_id."'";
+	   $sql = "UPDATE movies SET movie_title='" .$movie_title."' ,studio='".$studio."' ,year='".$year."' ,box_office='".$box_office."' WHERE movie_id='".$movie_id."'";
        $result = mysqli_query($conn, $sql);
 		
 	}  else if ($action == "Delete") {
