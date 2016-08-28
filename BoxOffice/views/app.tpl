@@ -13,8 +13,10 @@
 	
 <h1>Box Office Tracker</h1>
 	
-<table class='table'>
-<tr><th>Movie Title</th><th>Studio</th><th>Year</th><th>Box Office</th><th></th></tr>
+<table id="table" class="tablesorter">
+<thead><tr><th>Movie Title</th><th>Studio</th><th>Year</th><th>Box Office</th><th></th></tr></thead>
+
+<!-- if there are no movies, display message. Otherwise, show movie list. -->
 <?php
    if (count($movies) == 0) {
 ?>
@@ -25,6 +27,7 @@
 	  		   
      for ($i = 0; $i < count($movies); $i++) {
 	   
+	    print "<tbody>"
 	    print "<tr>";
 	    print "<td>". $movies[$i]['movie_title']   . "</td>" ;
 	    print "<td>". $movies[$i]['studio']    . "</td>" ;
@@ -39,14 +42,13 @@
 	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'><span class='glyphicon glyphicon-trash'></span></button></div>";
   
-  	    print "</div></td></tr>\n";
+  	    print "</div></td></tr></tbody>\n";
 	    
 	 }
 	   
   } 	  
 		  
 ?>
-
 
 </table>
 
@@ -133,14 +135,16 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/../js/tablesorter/jquery.tablesorter.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-	
 	$(document).ready(function () {
 		
 		$("#addBtn").click(function () {
 		   SBC.editRecord();	
 		})
+
+		$("#table").tablesorter();
 		
 	});
 	
@@ -180,7 +184,6 @@
 	 $('#addModal').modal('show');
 	  
 	}
-
 </script>
 
 </body>
