@@ -38,10 +38,10 @@
      for ($i = 0; $i < count($movies); $i++) {
 	    
 	    print "<tr>";
-	    print "<td>". $movies[$i]['movie_title']   . "</td>" ;
-	    print "<td>". $movies[$i]['studio']    . "</td>" ;
-	    print "<td>". $movies[$i]['year']        . "</td>" ;
-	    print "<td>". $movies[$i]['box_office']     . "</td>" ;
+	    print "<td>". $movies[$i]['movie_title'] . "</td>";
+	    print "<td>". $movies[$i]['studio'] . "</td>";
+	    print "<td>". $movies[$i]['year'] . "</td>";
+	    print "<td>". $movies[$i]['box_office'] . "</td>";
 	    
 	    print "<td><div class=row'>";
 	    print "<td><div class='row'>";
@@ -99,9 +99,9 @@
 		<input type="box_office" name="box_office" id="box_office" value=""  class="form-control">
 	</div>
 
-	<div>
-    	<label>Select image to upload:</label>
-    	<input type="file" name="fileToUpload" id="fileToUpload">
+	<div class="form-group">
+    	<label for="Select">Select Image to Upload:</label>
+    	<input type="file" name="fileToUpload" id="fileToUpload" value="" class="form-control">
 	</div>
 	
 	<input type="hidden" name="movie_id" id="movie_id" value="">
@@ -189,6 +189,7 @@
 	    $("#studio").attr('value',record.studio);
 	    $("#year").attr('value',record.year);
 	    $("#box_office").attr('value',record.box_office);
+	    $("#fileToUpload").attr('value', record.fileToUpload);
 	    $("#movie_id").attr('value',record.movie_id);
 	  
 	    $("#actionBtn").attr('value','Update');
