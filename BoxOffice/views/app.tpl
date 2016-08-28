@@ -44,19 +44,14 @@
 	    print "<td>". $movies[$i]['box_office'] . "</td>";
 	    
 	    print "<td><div class=row'>";
-	    print "<td><div class='row'>";
-	    	    
+	    print "<td><div class='row'>";	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
  		<span class='glyphicon glyphicon-pencil'></span></button></div>";
-
-	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'>
 	    <span class='glyphicon glyphicon-trash'></span></button></div>";
-  
   	    print "</div></td></tr>\n"; 
 	 }	
-  } 	  
-		  
+  } 	  	  
 ?>
 </tbody>
 </table>
@@ -151,6 +146,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="/BoxOffice/tablesorter/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/BoxOffice/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 	$(document).ready(function () {
@@ -159,8 +155,9 @@
 		   SBC.editRecord();	
 		})
 
-		$("#table").tablesorter();
-		
+		$("#table")
+		.tablesorter({widthFixed: true, widgets: ['zebra']})
+		.tablesorterPager({container: $("#pager")});
 	});
 	
 	
