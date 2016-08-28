@@ -100,11 +100,8 @@
 	</div>
 
 	<div>
-		<form action="upload.php" method="post" enctype="multipart/form-data">
-    	Select image to upload:
+    	<label>Select image to upload:</label>
     	<input type="file" name="fileToUpload" id="fileToUpload">
-    	<input type="submit" value="Upload Image" name="submit">
-		</form>
 	</div>
 	
 	<input type="hidden" name="movie_id" id="movie_id" value="">
