@@ -13,7 +13,7 @@
 	
 <h1>Box Office Tracker</h1>
 	
-<table id="table" class="tablesorter">
+<table id="table" class="tablesorter table">
 <thead>
 	<tr>
 		<th>Movie Title</th>
@@ -34,7 +34,6 @@
 <?php
   } else {
 	  		   
-	 #echo "<tbody>"
      for ($i = 0; $i < count($movies); $i++) {
 	    
 	    print "<tr>";
@@ -53,7 +52,6 @@
   
   	    print "</div></td></tr>\n"; 
 	 }	
-	 #echo "</tbody>"   
   } 	  
 		  
 ?>
