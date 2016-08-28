@@ -5,8 +5,8 @@
 <title>Box Office Tracker</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/BoxOffice/css/style.css">
 <link rel="stylesheet" type="text/css" href="/BoxOffice/tablesorter/addons/pager/jquery.tablesorter.pager.css">
+<link rel="stylesheet" type="text/css" href="/BoxOffice/css/style.css">
 
 </head>
 <body>
@@ -33,6 +33,7 @@
 ?>
   <tr><td colspan='5'>No Movies</td></tr>
 
+<div id="pager" class="pager">
 <?php
   } else {
 	  		   
@@ -43,7 +44,6 @@
 	    print "<td>". $movies[$i]['studio'] . "</td>";
 	    print "<td>". $movies[$i]['year'] . "</td>";
 	    print "<td>". $movies[$i]['box_office'] . "</td>";
-	    
 	    print "<td><div class=row'>";
 	    print "<td><div class='row'>";	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
@@ -54,12 +54,11 @@
 	 }	
   } 	  	  
 ?>
+</div>
 </tbody>
 </table>
 
-<button type="button" id="addBtn" class="btn btn-primary btn-lg">
-  Add
-</button>
+<button type="button" id="addBtn" class="btn btn-primary btn-lg"> Add </button>
 
 
 <!--  Partials are below --->
@@ -145,10 +144,10 @@
 
 </div>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="/BoxOffice/tablesorter/jquery.tablesorter.min.js"></script>
 <script type="text/javascript" src="/BoxOffice/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 	$(document).ready(function () {
 		
@@ -156,8 +155,9 @@
 		   SBC.editRecord();	
 		})
 
-		$("#table").tablesorter({widgets: ['zebra']});
-		//$("#table").tablesorterPager({container: $("#table")});
+		$("#table")
+		.tablesorter({widgets: ['zebra']})
+		.tablesorterPager({container: $("#pager")});
 	});
 	
 	
