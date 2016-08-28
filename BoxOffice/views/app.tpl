@@ -25,6 +25,7 @@
 </thead>
 
 <!-- if there are no movies, display message. Otherwise, show movie list. -->
+<tbody>
 <?php
    if (count($movies) == 0) {
 ?>
@@ -33,7 +34,7 @@
 <?php
   } else {
 	  		   
-	 echo "<tbody>"
+	 #echo "<tbody>"
      for ($i = 0; $i < count($movies); $i++) {
 	    
 	    print "<tr>";
@@ -52,11 +53,11 @@
   
   	    print "</div></td></tr>\n"; 
 	 }	
-	 echo "</tbody>"   
+	 #echo "</tbody>"   
   } 	  
 		  
 ?>
-
+</tbody>
 </table>
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg">
