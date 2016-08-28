@@ -21,6 +21,7 @@
 		<th>Studio</th>
 		<th>Year</th>
 		<th>Box Office</th>
+		<th>Picture</th>
 	</tr>
 </thead>
 
