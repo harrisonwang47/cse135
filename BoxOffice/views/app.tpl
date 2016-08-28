@@ -22,12 +22,13 @@
 ?>
   <tr><td colspan='5'>No Movies</td></tr>
 
+<tbody>
 <?php
   } else {
 	  		   
      for ($i = 0; $i < count($movies); $i++) {
 	   
-	    print "<tbody>"
+	    #print "<tbody>"
 	    print "<tr>";
 	    print "<td>". $movies[$i]['movie_title']   . "</td>" ;
 	    print "<td>". $movies[$i]['studio']    . "</td>" ;
@@ -42,14 +43,14 @@
 	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'><span class='glyphicon glyphicon-trash'></span></button></div>";
   
-  	    print "</div></td></tr></tbody>\n";
+  	    #print "</div></td></tr></tbody>\n";
+  	    print "</div></td></tr>\n";
 	    
-	 }
-	   
+	 }	   
   } 	  
 		  
 ?>
-
+</tbody>
 </table>
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg">
@@ -135,7 +136,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="/../tablesorter/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/BoxOffice/tablesorter/jquery.tablesorter.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 	$(document).ready(function () {
