@@ -28,7 +28,6 @@
 
 <!-- if there are no movies, display message. Otherwise, show movie list. -->
 <tbody>
-<div id="pager" class="pager">
 	<?php
 	   if (count($movies) == 0) {
 	?>
@@ -54,9 +53,23 @@
 		 }	
 	  } 	  	  
 	?>
-</div>
 </tbody>
 </table>
+
+<!--- Pagination elements -->
+<div id="pager" class="pager">
+  <form>
+    <img src="prev.png" class="prev"/>
+    <span class="pagedisplay"></span> 
+    <img src="next.png" class="next"/>
+    <select class="pagesize">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="all">All Rows</option>
+    </select>
+  </form>
+</div>	
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg"> Add </button>
 
@@ -157,7 +170,7 @@
 
 		$("#table")
 		.tablesorter({widgets: ['zebra']});
-		//.tablesorterPager({container: $("#pager")});
+		.tablesorterPager({container: $("#pager")});
 	});
 	
 	
