@@ -5,7 +5,7 @@
 <title>Box Office Tracker</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/BoxOffice/tablesorter/addons/pager/jquery.tablesorter.pager.css">
+<!--<link rel="stylesheet" type="text/css" href="/BoxOffice/tablesorter/addons/pager/jquery.tablesorter.pager.css">-->
 <link rel="stylesheet" type="text/css" href="/BoxOffice/css/style.css">
 
 </head>
@@ -59,11 +59,11 @@
 <!--- Pagination elements -->
 <div id="pager" class="pager">
 	<nav class="left">
-	  # per page:
+	  Items per page:
 	  <a href="#" class="current">5</a> |
 	  <a href="#">10</a> |
 	  <a href="#">20</a> |
-	  <a href="#">100</a>
+	  <a href="#">All</a>
 	</nav>
 </div>	
 

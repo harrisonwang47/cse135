@@ -40,8 +40,6 @@
 		
 	}
 
-	//add action sort by asc or desc
-
 	header('Location: index.php');
 	
 ?>
