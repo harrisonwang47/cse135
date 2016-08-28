@@ -156,7 +156,7 @@
 		})
 
 		$("#table")
-		.tablesorter({widthFixed: true, widgets: ['zebra']})
+		.tablesorter({widgets: ['zebra']})
 		.tablesorterPager({container: $("#pager")});
 	});
 	
