@@ -17,7 +17,15 @@
 <h1>Box Office Tracker</h1>
 	
 <table id="table" class="tablesorter">
-<thead><tr><th>Movie Title</th><th>Studio</th><th>Year</th><th>Box Office</th><th></th></tr></thead>
+<thead>
+	<tr>
+		<th>Movie Title</th>
+		<th>Studio</th>
+		<th>Year</th>
+		<th>Box Office</th>
+		<th></th>
+	</tr>
+</thead>
 
 <!-- if there are no movies, display message. Otherwise, show movie list. -->
 <?php
@@ -25,13 +33,12 @@
 ?>
   <tr><td colspan='5'>No Movies</td></tr>
 
-<tbody>
 <?php
   } else {
 	  		   
      for ($i = 0; $i < count($movies); $i++) {
 	   
-	    #print "<tbody>"
+	    print "<tbody>"
 	    print "<tr>";
 	    print "<td>". $movies[$i]['movie_title']   . "</td>" ;
 	    print "<td>". $movies[$i]['studio']    . "</td>" ;
@@ -46,14 +53,13 @@
 	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'><span class='glyphicon glyphicon-trash'></span></button></div>";
   
-  	    #print "</div></td></tr></tbody>\n";
-  	    print "</div></td></tr>\n";
+  	    print "</div></td></tr></tbody>\n";
 	    
 	 }	   
   } 	  
 		  
 ?>
-</tbody>
+
 </table>
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg">
