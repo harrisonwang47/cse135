@@ -157,7 +157,7 @@
 		})
 
 		$("#table").tablesorter({widgets: ['zebra']});
-		$("#table").tablesorterPager({container: $("#table")});
+		//$("#table").tablesorterPager({container: $("#table")});
 	});
 	
 	
