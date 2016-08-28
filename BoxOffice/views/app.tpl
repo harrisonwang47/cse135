@@ -58,17 +58,13 @@
 
 <!--- Pagination elements -->
 <div id="pager" class="pager">
-  <form>
-    <img src="prev.png" class="prev"/>
-    <span class="pagedisplay"></span> 
-    <img src="next.png" class="next"/>
-    <select class="pagesize">
-      <option value="5">5</option>
-      <option value="10">10</option>
-      <option value="20">20</option>
-      <option value="all">All Rows</option>
-    </select>
-  </form>
+	<nav class="left">
+	  # per page:
+	  <a href="#" class="current">5</a> |
+	  <a href="#">10</a> |
+	  <a href="#">20</a> |
+	  <a href="#">100</a>
+	</nav>
 </div>	
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg"> Add </button>
