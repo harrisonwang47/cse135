@@ -169,7 +169,7 @@
 		})
 
 		$("#table")
-		.tablesorter({widgets: ['zebra']});
+		.tablesorter({widgets: ['zebra']})
 		.tablesorterPager({container: $("#pager")});
 	});
 	
