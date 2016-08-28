@@ -33,9 +33,8 @@
 <?php
   } else {
 	  		   
-	 print "<tbody>"
+	 echo "<tbody>"
      for ($i = 0; $i < count($movies); $i++) {
-	   
 	    
 	    print "<tr>";
 	    print "<td>". $movies[$i]['movie_title']   . "</td>" ;
@@ -51,12 +50,13 @@
 	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'><span class='glyphicon glyphicon-trash'></span></button></div>";
   
-  	    print "</div></td></tr></tbody>\n"; 
-	 }	   
+  	    print "</div></td></tr>\n"; 
+	 }	
+	 echo "</tbody>"   
   } 	  
 		  
 ?>
-</tbody>
+
 </table>
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg">
