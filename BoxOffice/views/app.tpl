@@ -156,8 +156,8 @@
 		})
 
 		$("#table")
-		.tablesorter({widgets: ['zebra']})
-		.tablesorterPager({container: $("#pager")});
+		.tablesorter({widgets: ['zebra']});
+		//.tablesorterPager({container: $("#pager")});
 	});
 	
 	
