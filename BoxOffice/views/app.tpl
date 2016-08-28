@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="/BoxOffice/css/style.css">
+<link rel="stylesheet" type="text/css" href="/BoxOffice/tablesorter/addons/pager/jquery.tablesorter.pager.css">
 
 </head>
 <body>
@@ -155,9 +156,8 @@
 		   SBC.editRecord();	
 		})
 
-		$("#table")
-		.tablesorter({widgets: ['zebra']})
-		.tablesorterPager({container: $("#table")});
+		$("#table").tablesorter({widgets: ['zebra']});
+		$("#table").tablesorterPager({container: $("#table")});
 	});
 	
 	
