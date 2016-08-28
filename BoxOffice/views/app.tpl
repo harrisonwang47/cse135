@@ -155,8 +155,9 @@
 		   SBC.editRecord();	
 		})
 
-		$("#table").tablesorter({widgets: ['zebra']});
-		//.tablesorterPager({container: $("#pager")});
+		$("#table")
+		.tablesorter({widgets: ['zebra']})
+		.tablesorterPager({container: $("#table")});
 	});
 	
 	
