@@ -21,7 +21,6 @@
 		<th>Studio</th>
 		<th>Year</th>
 		<th>Box Office</th>
-		<th></th>
 	</tr>
 </thead>
 
@@ -46,10 +45,11 @@
 	    print "<td><div class='row'>";
 	    	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
-  <span class='glyphicon glyphicon-pencil'></span></button></div>";
+ 		<span class='glyphicon glyphicon-pencil'></span></button></div>";
 
 	    
-	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'><span class='glyphicon glyphicon-trash'></span></button></div>";
+	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'>
+	    <span class='glyphicon glyphicon-trash'></span></button></div>";
   
   	    print "</div></td></tr>\n"; 
 	 }	
