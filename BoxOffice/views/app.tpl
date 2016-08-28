@@ -28,32 +28,32 @@
 
 <!-- if there are no movies, display message. Otherwise, show movie list. -->
 <tbody>
-<?php
-   if (count($movies) == 0) {
-?>
-  <tr><td colspan='5'>No Movies</td></tr>
-
 <div id="pager" class="pager">
-<?php
-  } else {
-	  		   
-     for ($i = 0; $i < count($movies); $i++) {
-	    
-	    print "<tr>";
-	    print "<td>". $movies[$i]['movie_title'] . "</td>";
-	    print "<td>". $movies[$i]['studio'] . "</td>";
-	    print "<td>". $movies[$i]['year'] . "</td>";
-	    print "<td>". $movies[$i]['box_office'] . "</td>";
-	    print "<td><div class=row'>";
-	    print "<td><div class='row'>";	    
-	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
- 		<span class='glyphicon glyphicon-pencil'></span></button></div>";
-	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'>
-	    <span class='glyphicon glyphicon-trash'></span></button></div>";
-  	    print "</div></td></tr>\n"; 
-	 }	
-  } 	  	  
-?>
+	<?php
+	   if (count($movies) == 0) {
+	?>
+	  <tr><td colspan='5'>No Movies</td></tr>
+
+	<?php
+	  } else {
+		  		   
+	     for ($i = 0; $i < count($movies); $i++) {
+		    
+		    print "<tr>";
+		    print "<td>". $movies[$i]['movie_title'] . "</td>";
+		    print "<td>". $movies[$i]['studio'] . "</td>";
+		    print "<td>". $movies[$i]['year'] . "</td>";
+		    print "<td>". $movies[$i]['box_office'] . "</td>";
+		    print "<td><div class=row'>";
+		    print "<td><div class='row'>";	    
+		    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
+	 		<span class='glyphicon glyphicon-pencil'></span></button></div>";
+		    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'>
+		    <span class='glyphicon glyphicon-trash'></span></button></div>";
+	  	    print "</div></td></tr>\n"; 
+		 }	
+	  } 	  	  
+	?>
 </div>
 </tbody>
 </table>
