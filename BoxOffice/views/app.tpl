@@ -30,6 +30,7 @@
 ?>
   <tbody><tr><td colspan='5'>No Movies</td></tr><tbody>
 
+<tbody>
 <?php
   } else {
 	  		   
@@ -56,7 +57,7 @@
   } 	  
 		  
 ?>
-
+</tbody>
 </table>
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg">
