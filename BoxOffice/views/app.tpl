@@ -99,6 +99,7 @@
 		<input type="box_office" name="box_office" id="box_office" value=""  class="form-control">
 	</div>
 
+	<!-- TODO: Fix add image issue -->
 	<div class="form-group">
     	<label for="Select">Select Image to Upload:</label>
     	<input type="file" name="fileToUpload" id="fileToUpload" value="" class="form-control">
