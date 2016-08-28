@@ -30,13 +30,13 @@
 ?>
   <tr><td colspan='5'>No Movies</td></tr>
 
-<tbody>
 <?php
   } else {
 	  		   
+	 print "<tbody>"
      for ($i = 0; $i < count($movies); $i++) {
 	   
-	    #print "<tbody>"
+	    
 	    print "<tr>";
 	    print "<td>". $movies[$i]['movie_title']   . "</td>" ;
 	    print "<td>". $movies[$i]['studio']    . "</td>" ;
@@ -51,9 +51,7 @@
 	    
 	    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.confirmDelete(".$movies[$i]['movie_id'].");'><span class='glyphicon glyphicon-trash'></span></button></div>";
   
-  	    #print "</div></td></tr></tbody>\n";
-  	    print "</div></td></tr>\n";
-	    
+  	    print "</div></td></tr></tbody>\n"; 
 	 }	   
   } 	  
 		  
