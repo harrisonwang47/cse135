@@ -26,8 +26,7 @@
 </thead>
 
 <!-- if there are no movies, display message. Otherwise, show movie list. -->
-<div id="itemContainer">
-<tbody>
+<tbody id="itemContainer">
 	<?php
 	   if (count($movies) == 0) {
 	?>
@@ -54,7 +53,6 @@
 	  } 	  	  
 	?>
 </tbody>
-</div>
 </table>
 
 <div class="holder"></div>
