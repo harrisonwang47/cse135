@@ -168,7 +168,7 @@
 		})
 
 		/* sort table */
-		$("#table").tablesorter({widgets: ['zebra']});
+		$("#table").tablesorter({widthFixed: true, widgets: ['zebra']});
 
 		/* initiate pagination plugin */
 		$("div.holder").jPages({
