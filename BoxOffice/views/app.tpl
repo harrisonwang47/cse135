@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="/BoxOffice/css/style.css">
-<link rel="stylesheet" type="text/css" href="/BoxOffice/js/jPages/css/jPages.css"
+<link rel="stylesheet" type="text/css" href="/BoxOffice/js/jPages/css/jPages.css">
 
 </head>
 <body>
@@ -16,7 +16,7 @@
 <h1>Box Office Tracker</h1>
 	
 <table id="table" class="tablesorter table">
-<thead>
+<thead bgcolor="#e6EEEE">
 	<tr>
 		<th>Movie Title</th>
 		<th>Studio</th>
