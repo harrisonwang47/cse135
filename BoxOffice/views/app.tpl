@@ -16,7 +16,7 @@
 <h1>Box Office Tracker</h1>
 	
 <table id="table" class="tablesorter table">
-<thead bgcolor="#e6EEEE">
+<thead>
 	<tr>
 		<th>Movie Title</th>
 		<th>Studio</th>
