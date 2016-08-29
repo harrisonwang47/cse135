@@ -53,7 +53,6 @@
 	  } 	  	  
 	?>
 </tbody>
-</table>
 
 <!--- Pagination elements -->
 <div id="pager" class="pager">
@@ -64,6 +63,7 @@
             <option value="100">100</option> 
         </select>
 </div>	
+</table>
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg"> Add </button>
 
