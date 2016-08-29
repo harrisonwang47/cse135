@@ -23,6 +23,7 @@
 		<th>Year</th>
 		<th>Box Office</th>
 		<th>Picture</th>
+		<th></th>
 	</tr>
 </thead>
 
