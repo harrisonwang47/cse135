@@ -26,6 +26,7 @@
 </thead>
 
 <!-- if there are no movies, display message. Otherwise, show movie list. -->
+<div id="itemContainer">
 <tbody>
 	<?php
 	   if (count($movies) == 0) {
@@ -53,17 +54,21 @@
 	  } 	  	  
 	?>
 </tbody>
+</div>
 </table>
 
+<div class="holder"></div>
+
 <!--- Pagination elements -->
-<div id="pager" class="pager">
-	  <select class="pagesize" title="Select page size"> 
-            <option selected="selected" value="5">5</option> 
-            <option value="10">10</option> 
-            <option value="20">20</option> 
-            <option value="100">100</option> 
-        </select>
-</div>	
+<form>
+	<label>Items per page:</label>
+	<select>
+		<option>5</option>
+		<option>10</option>
+		<option>20</option>
+		<option>All</option>
+	</select>
+</form>
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg"> Add </button>
 
@@ -152,7 +157,8 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="/BoxOffice/js/tablesorter/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="/BoxOffice/js/tablesorter/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="/BoxOffice/js/jPages/js/jPages.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
 	$(document).ready(function () {
@@ -161,8 +167,24 @@
 		   SBC.editRecord();	
 		})
 
+		/* sort table */
 		$("#table").tablesorter({widgets: ['zebra']});
-		
+
+		/* initiate pagination plugin */
+		$("div.holder").jPages({
+			containerID : "itemContainer",
+			perPage     :  5
+
+		});
+
+		/* on select change, get new items per page */
+		$("select").change(function(){
+			var newPerPage = parseInt($(this).val());
+			$("div.holder").jPages("destroy").jPages({
+				containerID : "itemContainer",
+				perPage     :  newPerPage
+			});
+		});
 	});
 	
 	
