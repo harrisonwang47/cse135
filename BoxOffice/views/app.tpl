@@ -5,7 +5,6 @@
 <title>Box Office Tracker</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--<link rel="stylesheet" type="text/css" href="/BoxOffice/tablesorter/addons/pager/jquery.tablesorter.pager.css">-->
 <link rel="stylesheet" type="text/css" href="/BoxOffice/css/style.css">
 
 </head>
@@ -58,13 +57,12 @@
 
 <!--- Pagination elements -->
 <div id="pager" class="pager">
-	<nav class="left">
-	  Items per page:
-	  <a href="#" class="current">5</a> |
-	  <a href="#">10</a> |
-	  <a href="#">20</a> |
-	  <a href="#">All</a>
-	</nav>
+	  <select class="pagesize" title="Select page size"> 
+            <option selected="selected" value="5">5</option> 
+            <option value="10">10</option> 
+            <option value="20">20</option> 
+            <option value="100">100</option> 
+        </select>
 </div>	
 
 <button type="button" id="addBtn" class="btn btn-primary btn-lg"> Add </button>
@@ -164,8 +162,9 @@
 		   SBC.editRecord();	
 		})
 
-		$("#table").tablesorter({widgets: ['zebra']});
-		//.tablesorterPager({container: $("#pager")});
+		$("#table")
+		.tablesorter({widgets: ['zebra']})
+		.tablesorterPager({container: $(".pager")});
 	});
 	
 	
