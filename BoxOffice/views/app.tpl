@@ -69,7 +69,7 @@
 	</select>
 </form>
 
-<button type="button" id="addBtn" class="btn btn-primary btn-lg"> Add </button>
+<button type="button" id="addBtn" class="btn btn-primary btn-med"> Add </button>
 
 
 <!--  Partials are below --->
