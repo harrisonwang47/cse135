@@ -64,7 +64,7 @@
 		<option>5</option>
 		<option>10</option>
 		<option>20</option>
-		<option>All</option>
+		<option value="100">All</option>
 	</select>
 </form>
 
