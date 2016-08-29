@@ -68,7 +68,7 @@
 		<option value="100">All</option>
 	</select>
 </form>
-
+<br>
 <button type="button" id="addBtn" class="btn btn-primary btn-med"> Add </button>
 
 
