@@ -54,7 +54,7 @@
 	?>
 </tbody>
 </table>
-7
+
 <!--- Pagination elements -->
 <div id="pager" class="pager">
 	  <select class="pagesize" title="Select page size"> 
