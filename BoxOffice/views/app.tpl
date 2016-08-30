@@ -107,10 +107,16 @@
 	</div>
 
 	<!-- TODO: Fix add image issue -->
-	<div class="form-group">
+	<!--<div class="form-group">
     	<label for="Select">Select Image to Upload:</label>
     	<input type="file" name="fileToUpload" id="fileToUpload" value="" class="form-control">
-	</div>
+	</div>-->
+
+	<form id="form1" runat="server">
+		<label for="Select">Select Image to Upload:</load>
+        <input type="file" name="fileToUpload" id="fileToUpload" value="">
+        <img id="blah" src="#">
+    </form>
 	
 	<input type="hidden" name="movie_id" id="movie_id" value="">
 	
@@ -185,9 +191,26 @@
 				perPage     :  newPerPage
 			});
 		});
+
+		/* Upload an image */
+		$("#fileToUpload").change(function(){
+        readURL(this);
+    });
 	});
-	
-	
+
+	/* Add image to movie */
+	function readURL(input) {
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          
+          reader.onload = function (e) {
+              $('#fileToUpload').attr('src', e.target.result);
+          }
+          
+          reader.readAsDataURL(input.files[0]);
+      }
+    }
+
 	var SBC = {};
 	
 	SBC.confirmDelete = function confirmDelete(id) {
@@ -214,7 +237,7 @@
 	    $("#studio").attr('value',record.studio);
 	    $("#year").attr('value',record.year);
 	    $("#box_office").attr('value',record.box_office);
-	    $("#fileToUpload").attr('value', record.fileToUpload);
+	    //$("#fileToUpload").attr('value', record.fileToUpload);
 	    $("#movie_id").attr('value',record.movie_id);
 	  
 	    $("#actionBtn").attr('value','Update');
