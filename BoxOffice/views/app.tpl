@@ -107,16 +107,8 @@
 	</div>
 
 	<!-- TODO: Fix add image issue -->
-	<!--<div class="form-group">
-    	<label for="Select">Select Image to Upload:</label>
-    	<input type="file" name="fileToUpload" id="fileToUpload" value="" class="form-control">
-	</div>-->
-
-	<div class="form-group">
-		<label for="Select">Select Image to Upload:</load>
-        <input type="file" name="imageInput" id="imageInput" value="" class="form-control">
-        <img id="fileToUpload" src="#">
-    </div>
+	<input type="file" id="files" name="files[]" multiple />
+	<output id="list"></output>
 	
 	<input type="hidden" name="movie_id" id="movie_id" value="">
 	
@@ -191,25 +183,7 @@
 				perPage     :  newPerPage
 			});
 		});
-
-		/* Upload an image */
-		$("#imageInput").change(function(){
-        	readURL(this);
-    	});
 	});
-
-	/* Add image to movie */
-	function readURL(input) {
-      if (input.files && input.files[0]) {
-          var reader = new FileReader();
-          
-          reader.onload = function (e) {
-              $('#fileToUpload').attr('src', e.target.result);
-          }
-          
-          reader.readAsDataURL(input.files[0]);
-      }
-    }
 
 	var SBC = {};
 	
@@ -237,7 +211,7 @@
 	    $("#studio").attr('value',record.studio);
 	    $("#year").attr('value',record.year);
 	    $("#box_office").attr('value',record.box_office);
-	    $("#fileToUpload").attr('value', record.fileToUpload);
+	    //$("#fileToUpload").attr('value', record.fileToUpload);
 	    $("#movie_id").attr('value',record.movie_id);
 	  
 	    $("#actionBtn").attr('value','Update');
@@ -247,6 +221,39 @@
 	 $('#addModal').modal('show');
 	  
 	}
+</script>
+
+<!-- add image -->
+<script>
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          var span = document.createElement('span');
+          span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+          document.getElementById('list').insertBefore(span, null);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+  }
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
 </script>
 
 </body>
