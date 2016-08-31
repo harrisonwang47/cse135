@@ -47,7 +47,7 @@
 		    print "<td>". $movies[$i]['box_office'] . "</td>";
 		    #print "<td><div class=row'></td>";
 		    print "<td>
-		    			<input type="file" id="files" name="files[]" multiple form="imageUpload">
+		    			<input type="file" id="files" form="imageUpload" name="files[]" multiple />
 		    			<output id="list" form="imageUpload"></output>
 		    		</td>";
 		    print "<td><div class='row'>";	    
