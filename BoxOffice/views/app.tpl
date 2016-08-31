@@ -44,8 +44,8 @@
 		    print "<td>". $movies[$i]['studio'] . "</td>";
 		    print "<td>". $movies[$i]['year'] . "</td>";
 		    print "<td>". $movies[$i]['box_office'] . "</td>";
-		    echo '<td><img height="20%" width="auto" src="data:image/jpeg;base64,'.base64_encode( $movies[$i]['Picture'] ).'"/></td>';
-		    #print "<td>". $movies[$i]['Picture'] . "</td>";
+			print '<td><img src="/img/' . $movies[$i]['picture'] . '" /></td>';
+			#print "<td>". $movies[$i]['Picture'] . "</td>";
 		    print "<td><div class='row'>";	    
 		    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
 	 		<span class='glyphicon glyphicon-pencil'></span></button></div>";
@@ -111,9 +111,10 @@
 	<input type="file" id="files" name="files[]" multiple />
 	<output id="list"></output>
 	-->
-	<div class="form-group">
+	<form method="POST" action="action.php" enctype="multipart/form-data">
 		<label>Picture</label>
 		<input type="file" name="Picture" id="Picture" value=""  class="form-control">
+		<input value="Submit" type="submit">
 	</div>
 
 	<input type="hidden" name="movie_id" id="movie_id" value="">
