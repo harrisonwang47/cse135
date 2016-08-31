@@ -44,7 +44,7 @@
 		    print "<td>". $movies[$i]['studio'] . "</td>";
 		    print "<td>". $movies[$i]['year'] . "</td>";
 		    print "<td>". $movies[$i]['box_office'] . "</td>";
-			print '<td><img height="300" width="200" src="/images/' . $movies[$i]['Picture'] . '" /></td>';
+			print '<td><img height="300" width="200" alt="images" src="/images/' . $movies[$i]['Picture'] . '" /></td>';
 		    print "<td><div class='row'>";	    
 		    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
 	 		<span class='glyphicon glyphicon-pencil'></span></button></div>";
@@ -103,7 +103,7 @@
 
 	<div class="form-group">
 		<label>Box Office</label>
-		<input type="box_office" name="box_office" id="box_office" value=""  class="form-control">
+		<input type="text" name="box_office" id="box_office" value=""  class="form-control">
 	</div>
 
 	<!-- TODO: Fix add image issue 
