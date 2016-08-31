@@ -10,7 +10,7 @@
 	   $studio = validate($_REQUEST['studio']);
 	   $year = validate($_REQUEST['year']);
 	   $box_office = validate($_REQUEST['box_office']);
-	   $Picture = $_REQUEST['Picture'];
+	   $Picture = $_FILES['Picture'];
 
 	   $query = "SELECT * from movies WHERE movie_title='$movie_title' AND studio='$studio' AND year='$year' AND box_office='$box_office' AND Picture='$Picture'"; 
        $result = mysqli_query($conn, $query);
@@ -41,7 +41,7 @@
 	   $year = validate($_REQUEST['year']);
 	   $box_office = validate($_REQUEST['box_office']);	   
 	   $movie_id = validate($_REQUEST['movie_id']);
-	   $Picture = $_REQUEST['Picture'];
+	   $Picture = $_FILES['Picture'];
 		
 	   $query = "SELECT * from movies WHERE movie_title='$movie_title' AND studio='$studio' AND year='$year' AND box_office='$box_office' AND Picture='$Picture'"; 
        $result = mysqli_query($conn, $query);
