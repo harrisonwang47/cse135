@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Box Office Tracker</title>
@@ -72,8 +72,6 @@
 <br>
 <button type="button" id="addBtn" class="btn btn-primary btn-med"> Add </button>
 
-
-<!--  Partials are below --->
 
 <!-- Add Modal -->
 <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
