@@ -15,7 +15,6 @@
 	
 <h1>Box Office Tracker</h1>
 	
-<form method="GET" id="imageUpload"></form>	
 <table id="table" class="tablesorter table">
 <thead>
 	<tr>
@@ -46,10 +45,6 @@
 		    print "<td>". $movies[$i]['year'] . "</td>";
 		    print "<td>". $movies[$i]['box_office'] . "</td>";
 		    #print "<td><div class=row'></td>";
-		    print "<td>
-		    			<input type="file" id="files" form="imageUpload" name="files[]" multiple />
-		    			<output id="list" form="imageUpload"></output>
-		    		</td>";
 		    print "<td><div class='row'>";	    
 		    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
 	 		<span class='glyphicon glyphicon-pencil'></span></button></div>";
