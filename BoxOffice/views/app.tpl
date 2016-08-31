@@ -112,11 +112,11 @@
     	<input type="file" name="fileToUpload" id="fileToUpload" value="" class="form-control">
 	</div>-->
 
-	<form id="form1" runat="server">
+	<div class="form-group">
 		<label for="Select">Select Image to Upload:</load>
-        <input type="file" name="fileToUpload" id="fileToUpload" value="">
-        <img id="blah" src="#">
-    </form>
+        <input type="file" name="imageInput" id="imageInput" value="" class="form-control">
+        <img id="fileToUpload" src="#">
+    </div>
 	
 	<input type="hidden" name="movie_id" id="movie_id" value="">
 	
@@ -193,9 +193,9 @@
 		});
 
 		/* Upload an image */
-		$("#fileToUpload").change(function(){
-        readURL(this);
-    });
+		$("#imageInput").change(function(){
+        	readURL(this);
+    	});
 	});
 
 	/* Add image to movie */
@@ -237,7 +237,7 @@
 	    $("#studio").attr('value',record.studio);
 	    $("#year").attr('value',record.year);
 	    $("#box_office").attr('value',record.box_office);
-	    //$("#fileToUpload").attr('value', record.fileToUpload);
+	    $("#fileToUpload").attr('value', record.fileToUpload);
 	    $("#movie_id").attr('value',record.movie_id);
 	  
 	    $("#actionBtn").attr('value','Update');
