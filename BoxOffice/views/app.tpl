@@ -15,6 +15,7 @@
 	
 <h1>Box Office Tracker</h1>
 	
+<form method="GET" id="imageUpload"></form>	
 <table id="table" class="tablesorter table">
 <thead>
 	<tr>
@@ -46,10 +47,8 @@
 		    print "<td>". $movies[$i]['box_office'] . "</td>";
 		    #print "<td><div class=row'></td>";
 		    print "<td>
-		    			<form>
-		    			<input type="file" id="files" name="files[]" multiple />
-		    			<output id="list"></output>
-		    			</form>
+		    			<input type="file" id="files" name="files[]" multiple form="imageUpload">
+		    			<output id="list" form="imageUpload"></output>
 		    		</td>";
 		    print "<td><div class='row'>";	    
 		    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
@@ -112,10 +111,11 @@
 		<input type="box_office" name="box_office" id="box_office" value=""  class="form-control">
 	</div>
 
-	<!-- TODO: Fix add image issue -->
+	<!-- TODO: Fix add image issue 
 	<input type="file" id="files" name="files[]" multiple />
 	<output id="list"></output>
-	
+	-->
+
 	<input type="hidden" name="movie_id" id="movie_id" value="">
 	
     </div>
