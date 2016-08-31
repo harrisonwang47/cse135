@@ -126,7 +126,7 @@
 
 
 <!-- Delete modal -->
-<div id="deleteModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+<div id="deleteModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
