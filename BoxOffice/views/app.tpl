@@ -111,10 +111,9 @@
 	<input type="file" id="files" name="files[]" multiple />
 	<output id="list"></output>
 	-->
-	<form method="POST" action="action.php" enctype="multipart/form-data">
+	<div class="form-group">
 		<label>Picture</label>
 		<input type="file" name="Picture" id="Picture" value=""  class="form-control">
-		<input value="Submit" type="submit">
 	</div>
 
 	<input type="hidden" name="movie_id" id="movie_id" value="">
