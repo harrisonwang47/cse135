@@ -83,7 +83,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Add Record</h4>
       </div>
-      <div class="modal-body">
+     <div class="modal-body">
 
 	 <form action="action.php" method="POST" class="form">
 	 <div class="form-group">
@@ -113,15 +113,15 @@
 
 	<input type="hidden" name="movie_id" id="movie_id" value="">
 	
-    </div>
+   
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="submit" class="btn btn-primary" name="action" id="actionBtn" value="Add">Add</button>
       </div>
-    </div>
-    
-    </form>
+   	</form>
+   </div>
   </div>
+ </div>
 </div>
 
 
@@ -134,16 +134,13 @@
         <h4 class="modal-title" id="myModalLabel">Confirm Delete</h4>
       </div>
       
-      
-      
       <div class="modal-footer">
-
       <form action="action.php" method="POST">
 	  	<input type="hidden" name="movie_id" id="deleteConfirm_movie_id" value="">
-	  	
+	
 	  	<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="submit" class="btn btn-primary" name="action" value="Delete">Delete</button>
-       </form>
+      </form>
       </div>
       
     </div>
