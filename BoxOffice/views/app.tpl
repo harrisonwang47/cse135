@@ -57,7 +57,7 @@
 </tbody>
 </table>
 
-<div class="holder">
+<div class="holder"></div>
 
 <!--- Pagination elements -->
 <form>
@@ -114,13 +114,13 @@
 	<input type="hidden" name="movie_id" id="movie_id" value="">
 	
     </div>
-      
-    <div class="modal-footer">
+      <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="submit" class="btn btn-primary" name="action" id="actionBtn" value="Add">Add</button>
+      </div>
     </div>
+    
     </form>
-    </div>
   </div>
 </div>
 
