@@ -10,9 +10,8 @@
 	   $studio = validate($_REQUEST['studio']);
 	   $year = validate($_REQUEST['year']);
 	   $box_office = validate($_REQUEST['box_office']);
-	   #$Picture = validate($_REQUESR['Picture']);
 
-	   $query = "SELECT * from movies WHERE movie_title='$movie_title' AND studio='$studio' AND year='$year' AND box_office='$box_office' AND Picture='$Picture'"; 
+	   $query = "SELECT * from movies WHERE movie_title='$movie_title' AND studio='$studio' AND year='$year' AND box_office='$box_office'"; 
        $result = mysqli_query($conn, $query);
 	   $duplicate = mysqli_num_rows($result);
 	
@@ -29,7 +28,7 @@
 			echo '</script>';
 		} 
 		else {
-		     $sql = "INSERT INTO movies (movie_title,studio,year,box_office, Picture) VALUES ('$movie_title' , '$studio' , '$year' , '$box_office' , '$Picture')";
+		     $sql = "INSERT INTO movies (movie_title,studio,year,box_office) VALUES ('$movie_title' , '$studio' , '$year' , '$box_office')";
 		     $result = mysqli_query($conn, $sql);
   		     header('Location: index.php');
 		}
@@ -41,9 +40,8 @@
 	   $year = validate($_REQUEST['year']);
 	   $box_office = validate($_REQUEST['box_office']);	   
 	   $movie_id = validate($_REQUEST['movie_id']);
-	   #$Picture = validate($_REQUESR['Picture']);
 		
-	   $query = "SELECT * from movies WHERE movie_title='$movie_title' AND studio='$studio' AND year='$year' AND box_office='$box_office' AND Picture='$Picture'"; 
+	   $query = "SELECT * from movies WHERE movie_title='$movie_title' AND studio='$studio' AND year='$year' AND box_office='$box_office'"; 
        $result = mysqli_query($conn, $query);
 	   $duplicate = mysqli_num_rows($result);
 	

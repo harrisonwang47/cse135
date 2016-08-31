@@ -44,7 +44,7 @@
 		    print "<td>". $movies[$i]['studio'] . "</td>";
 		    print "<td>". $movies[$i]['year'] . "</td>";
 		    print "<td>". $movies[$i]['box_office'] . "</td>";
-		    print "<td>" . $movies[$i]['Picture'] . "</td>";
+		    #print "<td>" . $movies[$i]['Picture'] . "</td>";
 		    print "<td><div class=row'></td>";
 		    print "<td><div class='row'>";	    
 		    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
