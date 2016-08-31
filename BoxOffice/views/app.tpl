@@ -106,10 +106,10 @@
 		<input type="box_office" name="box_office" id="box_office" value=""  class="form-control">
 	</div>
 
-	<!-- TODO: Fix add image issue 
+	<!-- TODO: Fix add image issue -->
 	<input type="file" id="files" name="files[]" multiple />
 	<output id="list"></output>
-	-->
+	
 
 	<input type="hidden" name="movie_id" id="movie_id" value="">
 	
