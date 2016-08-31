@@ -44,7 +44,8 @@
 		    print "<td>". $movies[$i]['studio'] . "</td>";
 		    print "<td>". $movies[$i]['year'] . "</td>";
 		    print "<td>". $movies[$i]['box_office'] . "</td>";
-		    print "<td><div class=row'><input type="file" id="files" name="files[]" multiple /><output id="list"></output></td>";
+		    print "<td><div class=row'></td>";
+		    print "<input type="file" id="files" name="files[]" multiple /><output id="list"></output>";
 		    print "<td><div class='row'></td>";	    
 		    print "<div class='col-sm-6'><button type='button' class='btn btn-default' onclick='SBC.editRecord(".json_encode($movies[$i]).")'>
 	 		<span class='glyphicon glyphicon-pencil'></span></button></div>";
