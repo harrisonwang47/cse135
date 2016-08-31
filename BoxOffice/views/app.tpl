@@ -57,7 +57,7 @@
 </tbody>
 </table>
 
-<div class="holder"></div>
+<div class="holder">
 
 <!--- Pagination elements -->
 <form>
@@ -106,25 +106,21 @@
 		<input type="text" name="box_office" id="box_office" value=""  class="form-control">
 	</div>
 
-	<!-- TODO: Fix add image issue 
-	<input type="file" id="files" name="files[]" multiple />
-	<output id="list"></output>
-	-->
 	<div class="form-group">
 		<label>Picture</label>
-		<input type="file" name="Picture" id="Picture" value=""  class="form-control">
+		<input type="file" name="Picture" id="Picture" class="form-control">
 	</div>
 
 	<input type="hidden" name="movie_id" id="movie_id" value="">
 	
     </div>
-      <div class="modal-footer">
+      
+    <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="submit" class="btn btn-primary" name="action" id="actionBtn" value="Add">Add</button>
-      </div>
     </div>
-    
     </form>
+    </div>
   </div>
 </div>
 
@@ -147,7 +143,6 @@
 	  	
 	  	<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         <button type="submit" class="btn btn-primary" name="action" value="Delete">Delete</button>
-
        </form>
       </div>
       
